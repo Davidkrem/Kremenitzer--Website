@@ -1,0 +1,254 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    max-width: 2000px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+  }
+ 
+  nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid #686C73;
+    color: #fff;
+    background: #686C73;
+    color: #fff;;
+    opacity: .7;
+   
+  }
+  
+  @media screen and (max-width: 400px) {
+    nav {
+      grid-template-columns: 25%;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      display: none;
+
+
+   }
+  }  
+  
+  .nav1 {
+    grid-area: 3 / 2;
+
+  }
+  
+  .nav2 {
+    grid-area: 3 / 3;
+  }
+  
+  
+  .nav3 {
+    grid-area: 3 / 4;
+  }
+  
+
+  
+  .navLinks {
+    font-size: 1rem;
+    text-transform: uppercase; 
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    letter-spacing: .4rem;
+  }
+  
+  .navLinks:hover {
+    color: white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 1em 1em;
+  }
+
+
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+  /*Sizing*/
+  
+  .container {
+    margin: 0 auto;
+  }
+
+  
+ 
+  /*Jumbotron Section*/
+    /*Jumbotron Section*/
+  
+    .jumbotron {
+        background-color: #1d6ae5;
+        /* max-width: 500px; */
+        /* min-height: 600px; */
+        display: flex;
+        /* max-width: 600px; */
+        padding: 80px;
+      }
+      
+      .jumbotron h2 {
+        font-size: 50px;
+        margin-bottom: 70px;
+      }
+      
+      .jumbotron img {
+          text-align: center;
+          border-radius: 29px;
+          margin: 23px;
+          padding: 7px;
+          border: 5px solid #cbcdd2;
+          height: 400px;
+         max-width: 400px;
+         min-width: 200px;
+          height: auto;
+      }
+    
+  
+  /*Voiceover Section*/
+
+  #voiceover {
+    padding: 100px;
+    background-color:#fc7507c2;
+    margin: 0;
+    text-align: center;
+  }
+
+  .demo{
+      color:white;
+      font-family: 'Raleway';
+      font-size: 2rem;
+      letter-spacing: .4rem;
+      margin: -34px 0px 40px 0px;
+      text-align: center;
+  }
+
+  .clients{
+    color:white;
+    font-size: 2rem;
+    font-family: 'Raleway';
+    letter-spacing: .4rem;
+    margin: 150px 0px 40px 0px;
+    text-align: center;
+}
+
+
+  .comedy-reel {
+    color:white;
+    font-family: 'Raleway';
+    font-size: 2rem;
+    letter-spacing: .4rem;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin: 90px 0px 0px; */
+    margin-top: 100px;
+  }
+
+  p {
+      color: white;
+      font-size: 1.3rem;
+      letter-spacing: .3rem;
+  }
+
+   .col img {
+   margin: 10px auto;
+   height: 150px;
+   width: 150px;
+   border-radius: 100%;
+   border: 2px solid white;
+   padding: 5px;
+   margin: 16px;
+  }
+  .cards {
+    padding: 15px;
+    /* background-color: #607d8b0f; */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: auto;
+    border-radius: 20px;
+  }
+  
+  .col {
+    display: inline-flex;
+    flex-direction:column;
+    justify-items:center;
+  
+  }
+
+  #On-Camera{
+    text-align: center;
+    display: flex;
+    margin: -30px 0px 30px 0px;
+  }
+section {
+    background-color:#00cc9a;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    margin: 20;
+}
+  iframe {
+      border-radius: 21px;
+      border: 3px solid white;
+      display: flex;
+      /* flex-direction:column; */
+      /* justify-items:center; */
+      padding: 3px;
+      margin: 90px;
+  }
+  
+  /*Footer Section*/
+  .footer {
+    padding: 60px 0px;
+    background-color:#686C73;
+    color: #fff;
+  }
+  
+  .footer h3 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .footer p {
+    font-size:12px;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    nav {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+   }
+  }  
+
+  @media screen and (max-width: 400px) {
+      .jumbotron img {
+          width: 100%;
+          display: ;
+          justify-content: center;
+         margin: auto;
+      }
+    }
