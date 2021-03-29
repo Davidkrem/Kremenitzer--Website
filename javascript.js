@@ -1,9 +1,8 @@
-
 function myFunction() {
-  var x = document.getElementById("hamburger");
-  if (x.className === "nav") {
+  let x = document.getElementById("myham-nav");
+  if (x.className === "hamnav") {
     x.className += " responsive";
   } else {
-    x.className = "nav";
+    x.className = "hamnav";
   }
 }

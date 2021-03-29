@@ -21,12 +21,13 @@ float: none !important;
 overflow-x: hidden;
 }
 
-@media screen and (max-width: 400px) {
-  {
-   margin: 0 auto;
- }
-}  
+/*Sizing*/
 
+.container {
+  margin: 0 auto;
+}
+
+/* Main Navigation header */
 
 nav {
   display: grid;
@@ -45,16 +46,11 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
-  nav {
-    grid-template-columns: 25%;
-    grid-template-rows: auto;
-    grid-gap: 1em;
+nav.container{
     display: none;
 
-
  }
-}  
-
+} 
 
 .nav1 {
   grid-area: 3 / 2;
@@ -106,29 +102,89 @@ nav {
   transform: scale(1.1);
 }
 
-/*Sizing*/
+/*Hamburger nav code */ 
 
-.container {
-  margin: 0 auto;
+.hamnav {
+  background-color:#686C73;
+  overflow: hidden;
+}
+
+.hamnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-style: 'Raleway';
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: .2rem;
+
+}
+
+.hamnav a:hover {
+  background-color:#686C73;
+  border-radius: 8px;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.hamnav a.active {
+  background-color: ;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.hamnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .hamnav a:not(:first-child) {display: none;}
+  .hamnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hamnav.responsive {position: relative;}
+  .hamnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .hamnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 700px) {
+  .hamnav {
+    display: none;
+    padding: 40px;
+  }
 }
 
 
+  /* Main Banner Section */
 
-/*Jumbotron Section*/
-  /*Jumbotron Section*/
-
-  .jumbotron {
+  .banner {
       background-color: #1d6ae5;
       display: flex;
       padding: 80px;
     }
 
-    .jumbotron h2 {
+    .banner h2 {
       font-size: 50px;
       margin-bottom: 70px;
     }
     
-    .jumbotron img {
+    .banner img {
         text-align: center;
         border-radius: 29px;
         margin: 23px;
@@ -141,7 +197,7 @@ nav {
     }
 
     @media screen and (max-width: 500px) {
-       .jumbotron img{
+       .banner img{
        max-width: 100%;
        display: block;
        height: auto;
@@ -161,9 +217,8 @@ audio {
   background-color:#fc7507c2;
   margin: 0;
   text-align: center;
+  margin-bottom: -75px;
 }
-
-
 
 .demo{
     color:white;
@@ -172,6 +227,11 @@ audio {
     letter-spacing: .4rem;
     margin: -34px 0px 40px 0px;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+  .short-text { display: inline-block; }
+  .full-text { display: none; }
 }
 
 
@@ -192,16 +252,13 @@ audio {
   font-size: 2rem;
   letter-spacing: .4rem;
   text-align: center;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* margin: 90px 0px 0px; */
   margin-top: 40px;
 }
 
 p {
-    color: white;
-    font-size: 1.3rem;
-    letter-spacing: .3rem;
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: .3rem;
 }
 
  .col img {
@@ -215,7 +272,6 @@ p {
 }
 .cards {
   padding: -2px 0px 40px 0px;
-  /* background-color: #607d8b0f; */
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -232,6 +288,8 @@ p {
 
 }
 
+/* On-Camera section */
+
 #On-Camera{
   text-align: center;
   display: flex;
@@ -247,20 +305,16 @@ iframe {
     border-radius: 21px;
     border: 3px solid white;
     display: flex;
-    /* flex-direction:column; */
-    /* justify-items:center; */
     padding: 3px;
     margin: 90px;
 }
 
-
 @media screen and (max-width: 500px) {
   section{
   max-width: 100%;
-  padding: 10px;
+  padding: 30px;
   display: block;
   height: auto;
-
 }
 iframe{
   max-width: 60%;
@@ -269,11 +323,8 @@ iframe{
   height: auto;
   text-align: center;
   margin: 50px;
-
 }
 }  
-
-
 
 @media screen and (max-width: 900px) {
  #contact {
@@ -283,163 +334,148 @@ iframe{
  }
 }  
 
+/* Footer Section */
 
 .footer {
-display: grid; 
-grid-template-columns: 7vw 1fr 7vw; 
-grid-template-rows: auto auto; 
-font-family: 'raleway';
-color: #fff; 
-background: #686C73; 
+  background-color: #a1b9de;
+  padding: 40px 0;
+  text-align: center;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin: auto;
+}
+
+li{
+  display: inline;
+  margin: 0 10px;
 }
 
 
-@media screen and (min-width: 960px) { 
-  .footer { 
-      height: 45vh; 
-  } 
+  a.icoGithub:hover {
+    background-color: black;
+  }
+
+a.icoA3:hover {
+  background-color: #a0833b;
 }
 
-@media screen and (max-width: 960px) { 
-  .footer-nav, .footer-secondary-nav { 
-      display: none; 
-  } 
-  .footer-container { 
-      grid-template-columns: 1fr 1fr; 
-      grid-template-rows: 20vh 25vh 20vh; 
-      grid-template-areas: "logo social" "contact newsletter"; 
-  } 
-      .bottom-line { display: grid; 
-          grid-template-columns: 7vw 1fr 7vw; 
-      } 
-          .bottom-line p { 
-              justify-self: center; } 
-         
-      }
-
-@media screen and (max-width: 768px) { 
-    .footer-container { 
-  grid-template-columns: 1fr; 
-  grid-template-areas: "logo" "social" "newsletter" "contact"; 
-} 
-.footer-logo, .contact-block { 
-  justify-self: center; 
-  align-self: center; 
-} 
-  .social-networks{ 
-      display: hidden;
-  } 
-      .contact-block h3, .social-networks h3 {
-           line-height: 3rem; 
-         font-size; 1rem;
-          } 
-      }
-           
-.footer-container { 
-  grid-column: 2 / 3; 
-  display: grid; 
-  grid-template-columns: 2fr 2fr 2fr 3fr; 
-  grid-template-rows: auto auto; 
-  grid-template-areas: "logo navigation secondary social" "contact contact . newsletter"; }
-
-  .contact-block img {
-      grid-area: logo;
-      max-width: 75px;
-      border: 1px solid gold;
-      border-radius: 1rem;
-      margin: -10px 0px 10px;
-      opacity: .8;
-  } 
-
-  @media screen and (max-width: 700px) {
-    .contact-block img {
-      grid-template-columns: 25%;
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      max-width: 30px;
-  
-   }
-  }  
-  
-  .footer-secondary-nav { 
-      grid-area: secondary; 
-      justify-self: center; 
-  } 
-      
-  .social-networks { 
-      grid-area: social; 
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto auto;
-      justify-items: center;
-
-  } 
-
-  .social-networks h3 {
-      grid-column: 1 / -1;
-      font-weight: 500;
-      margin-top: 45px;
-      color: black;
-  }
-  
-  .github img{
-      justify-self: right;
-      max-width: 40px;
-  }
-
-  .facebook img {
-    justify-self: left;
-      max-width: 40px;
-      border: 1px solid gray;
-      border-radius:100%;
+a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+a.icoInstagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+.social-network a.icoA3:hover i, .social-network a.icoInstagram:hover i, .social-network a.icoGithub:hover i, .social-network a.icoTwitter:hover i,  .social-network a.icoLinkedin:hover i {
+  color: white;
 }
 
-.linkedin img {
-  justify-self: left;
-      max-width: 40px;
-      border: 1px solid gray;
-      border-radius:100%;
-
+.social-icons li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
 }
-  .contact-block { 
-      grid-area: contact; 
-  } 
 
-  .contact-block h3 {
-      font-size: 1.5rem;
-      font-weight: 100;
-      margin-top: -100px;
-      margin-bottom: 24px;
-      color: white;
+.social-icons li i {
+  margin: 0;
+  line-height: 60px;
+  text-align: center;
+}
+
+.social-icons li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-icons i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-icons a {
+  background-color: #CCD8EA;
+}
+
+@media screen and (max-width: 500px) {
+  ul.social-network li {
+      display: inline;
+      margin: 0 5px;
   }
+}
 
-  .contact-block p {
-      font-size: .6rem;
-      font-weight: 100;
-      line-height: .4rem;
-      font-family: 'raleway';
-      margin-bottom: 10px;
+@media screen and (max-width: 450px) {
+  ul.social-network li {
+      display: inline;
+      margin: 0 5px;
   }
-
-
-  @media screen and (max-width: 700px) {
-    .contact-block p {
-      grid-template-columns: 25%;
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      display: none;
-  
-   }
-  }  
-
-  .contact-block {
-      align-self: end;
+  .social-icons li a {
+      display: inline-block;
+      position: relative;
+      margin: 0 auto 0 auto;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
   }
+  .social-icons li i {
+      margin: 0;
+      line-height: 40px;
+      text-align: center;
+  }
+}
 
-  .contact-block a { 
-      display: block; border: 2px solid #fff; 
-  padding: 0.5rem; 
-  margin: 10px 0 0; 
-  text-align: center; 
-  width: 70%; } 
-  
+@media screen and (max-width: 350px) {
+  ul.social-network li {
+      display: inline;
+      margin: 0 2px;
+  }
+  .social-icons li a {
+      display: inline-block;
+      position: relative;
+      margin: 0 auto 0 auto;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+  }
+  .social-icons li i {
+      margin: 0;
+      line-height: 40px;
+      text-align: center;
+  }
+}
+
+

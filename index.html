@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Kremenitzer Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>David Kremenitzer</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
   
 </head>
-
-
 <body>
+
+    <div class="hamnav" id="myham-nav">
+        <a href="#home" class="active">Menu</a>
+        <a href="#voiceover">Voiceover</a>
+        <a href="#On-Camera">On-Camera</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    
     
     <header>
-        <nav class="container" id=" hamburger">
+        <nav class="container">
           <div class="nav1 hvr-grow">
           <a href="#voiceover" class="navLinks">Voiceover</a>
           </div>
@@ -29,16 +38,14 @@
           </div>
         </nav>
       </header>
-      
-      <div class="jumbotron">
+      <div class="banner">
         <div class="container">
-        <img src="./KremBanner.jpg" alt="Banner Logo">
+        <img src="./KremBanner.jpg" alt="banner Logo">
         </div>
       </div>
-      
       <div class="container">
         <div id="voiceover">
-            <div class="demo">Commercial Voiceover Reel</div>
+            <div class="demo"><span class="full-text">Commercial Voiceover Reel</div>
             <audio src="./Kremenitzer,David-Commercial20 (1).mp3" controls></audio>
 
             <div class="clients">Click to listen</div>
@@ -63,47 +70,26 @@
         </div>
       </div>
       <section>
-      
       <div class="container">
         <div class="comedy-reel">Comedy Reel</div>
           <div id="On-Camera"></div>
-
             <iframe width="560" height="315" src="https://www.youtube.com/embed/mUAn6UdWx6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
           </div>
       </div>
     </section>
-
     <div id="contact">
-    <footer class="footer">
-        <div class="footer-container">
-            
-            <div class="contact-block">
-            
-                <h3>A3 Artists Agency</h3>
-                <img  src="./A3.jpg" alt="">
-                <p>350 Fifth Ave.</p>
-                    <p>38th Floor</p>
-                <p> New York, NY 10118</p>
-            <p>646.486.4600</p>
-        <p>contactny@a3artistsagency.com</p>
-            
-            </div>
-        
-            <div class="social-networks">
-                <h3>Follow me</h3>
-                <div class="github">
-                    <a href="https://github.com/Davidkrem" target="_blank"><img src="./github.png" alt="github logo"></a>
-                </div>
-                <div class="linkedin">
-                   <a href="https://www.linkedin.com/" target="_blank"><img src="./linkedin.webp" alt="linkedin logo"></a>
-                </div>
-                <div class="facebook">
-                    <a href="https://www.facebook.com/" target = "_blank"><img src="./facebook.webp" alt="facebook logo"></a>
-                </div>
-            </div>
+        <div class="footer">
+            <div class="social-network">
+            <ul class="social-icons">
+                <li><a class="icoA3" href="https://www.a3artistsagency.com/contact/" title="A3 Artists Agency" target="_blank"><i class="fa fa-microphone"></i></a></li>
+                <li><a class="icoGithub" href="https://github.com/Davidkrem" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a class="icoLinkedin" href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a class="icoTwitter" href="https://twitter.com/kremenitzer?lang=en" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="icoInstagram" href="https://www.instagram.com/davidkrem/?hl=en" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
         </div>
-    </footer>
+        </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
+
