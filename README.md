@@ -20,4 +20,4 @@ NEW and improved David Kremenitzer Voice-Over/ On-Camera Website built from scra
 Completed
 
 ### **View My Project**
-Connection to Netlify and will transfer domain over here soon.
+www.kremenitzer.com
