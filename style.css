@@ -77,6 +77,12 @@ nav.container{
   letter-spacing: .4rem;
 }
 
+@media screen and (max-width: 700px) {
+  .navLinks{
+letter-spacing: .1rem;
+}  
+}
+
 .navLinks:hover {
   color: white;
   border-left: 1px solid white;
@@ -139,7 +145,7 @@ nav.container{
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .hamnav a:not(:first-child) {display: none;}
   .hamnav a.icon {
     float: right;
@@ -194,7 +200,7 @@ nav.container{
         height: auto;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
        .banner img{max-width: 250px;display: block;height: auto;text-align: center;margin: auto;margin: 9px -33px 0px -27px;}
     
     }  
