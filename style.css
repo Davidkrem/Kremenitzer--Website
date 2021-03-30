@@ -118,7 +118,7 @@ nav.container{
   text-decoration: none;
   font-size: 14px;
   font-style: 'Raleway';
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   letter-spacing: .2rem;
 
@@ -130,13 +130,11 @@ nav.container{
   color: black;
 }
 
-/* Add an active class to highlight the current page */
 .hamnav a.active {
   background-color: ;
   color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .hamnav .icon {
   display: none;
 }
@@ -191,8 +189,8 @@ nav.container{
         padding: 7px;
         border: 5px solid #cbcdd2;
         height: 400px;
-       max-width: 400px;
-       min-width: 200px;
+       max-width: 500px;
+       min-width: 250px;
         height: auto;
     }
 
@@ -205,9 +203,7 @@ nav.container{
        margin: auto;
        margin: 10px -10px;
      }
-audio {
-    margin: 13px -32px -30px;
-}
+    
     }  
 
 /*Voiceover Section*/
@@ -229,9 +225,36 @@ audio {
     text-align: center;
 }
 
-@media (max-width: 500px) {
-  .short-text { display: inline-block; }
-  .full-text { display: none; }
+audio {
+  margin: 0px -31px -10px;
+   }
+
+
+.short-text span {
+  color:white;
+  font-family: 'Raleway';
+  font-size: 2rem;
+  letter-spacing: .4rem;
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 500px) {
+  .full-text { 
+    display: none; 
+  }
+  .col img {
+    margin: 5px;
+  }
+  audio {
+    margin: 21px -32px -30px;
+     }
+     
+}
+
+@media screen and (min-width: 600px) {
+  .short-text { 
+    display: none; 
+}
 }
 
 
@@ -244,15 +267,6 @@ audio {
   text-align: center;
   font-weight: 500;
   margin-top: 100px;
-}
-
-.comedy-reel {
-  color:white;
-  font-family: 'Raleway';
-  font-size: 2rem;
-  letter-spacing: .4rem;
-  text-align: center;
-  margin-top: 40px;
 }
 
 p {
@@ -277,7 +291,6 @@ p {
   justify-content: center;
   max-width: auto;
   border-radius: 20px;
-  /* margin-top: 4px; */
   margin: 54px;
 }
 
@@ -301,6 +314,16 @@ section {
   text-align: center;
   display: flex;
 }
+
+.comedy-reel {
+  color:white;
+  font-family: 'Raleway';
+  font-size: 2rem;
+  letter-spacing: .4rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
 iframe {
     border-radius: 21px;
     border: 3px solid white;
