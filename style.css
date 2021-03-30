@@ -195,14 +195,7 @@ nav.container{
     }
 
     @media screen and (max-width: 500px) {
-       .banner img{
-       max-width: 100%;
-       display: block;
-       height: auto;
-       text-align: center;
-       margin: auto;
-       margin: 10px -10px;
-     }
+       .banner img{max-width: 250px;display: block;height: auto;text-align: center;margin: auto;margin: 9px -33px 0px -27px;}
     
     }  
 
@@ -246,8 +239,8 @@ audio {
     margin: 5px;
   }
   audio {
-    margin: 21px -32px -30px;
-     }
+    margin: 17px -54px -30px;
+    }
      
 }
 
