@@ -199,10 +199,6 @@ nav.container{
     
     }  
 
-    @media screen and (max-width: 375px) {
-      .banner img{max-width: 200px;display: block;height: auto;text-align: center;margin: auto;margin: 9px -33px 0px -27px;}
-   
-   }  
 
 
 /*Voiceover Section*/
