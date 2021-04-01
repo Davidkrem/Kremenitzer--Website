@@ -12,7 +12,7 @@ NEW and improved David Kremenitzer Voice-Over/ On-Camera Website built from scra
 
 - HTML
 - CSS
-- JS
+- JavaScript
 
 
   
